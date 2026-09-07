@@ -8,8 +8,8 @@ app.use(express.json());
 app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'UP',
-    service: 'omnichannel-customer-account-service',
-    port: Number(process.env.PORT || 3010),
+    service: 'omnichannel-dashboard-repirting-service',
+    port: Number(process.env.PORT || 3010g),
   });
 });
 
