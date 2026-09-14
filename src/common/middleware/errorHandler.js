@@ -28,3 +28,5 @@ module.exports = (err, req, res, next) => {
     errorCode: err.code || null,
   });
 };
+//have to connect this to the app.js. 
+//it is not still added
