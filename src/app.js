@@ -4,6 +4,7 @@ const express = require('express');
 //const listFTTHRequestStatusCount = require('./APIs/listFTTHRequestStatusCount/routes/route');
 //const ListFTTHRequestCharts = require('./APIs/ListFTTHRequestCharts/routes/route');
 const retrieveBillingOverview = require('./APIs/retrieveBillingOverview/routes/route');
+const retrieveSubscriptionOverview = require('./APIs/retrieveSubscriptionOverview/routes/route');
 const app = express();
 
 app.use(express.json());
@@ -20,5 +21,6 @@ app.get('/health', (req, res) => {
 //app.use('/',listFTTHRequestStatusCount); //no tmf
 //app.use('/',ListFTTHRequestCharts);
 app.use('/',retrieveBillingOverview); //tmf 678
+app.use('/', retrieveSubscriptionOverview);
 
 module.exports = app;
