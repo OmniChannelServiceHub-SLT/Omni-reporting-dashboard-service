@@ -1,8 +1,7 @@
 const axios = require('axios');
 
 /**
- * Fetches product/subscription detail from the upstream legacy backend.
- * TMF637 mapping happens in the controller.
+
  *
  * TODO: confirm UPSTREAM_ACCOUNT_BASE_URL and the real upstream path.
  */
